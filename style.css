@@ -1,3 +1,8 @@
+:root {
+	font-size: 16;
+
+}
+
 @font-face {
 	font-family: 'AvantGarde';
 	src: url(fonts/AvantGarde-Bold.188068d1.otf);
@@ -8,10 +13,6 @@
 	src: url(fonts/SourceSansPro-Regular.770ca066.ttf);
 }
 
-html {
-	padding: 0;
-	margin: 0;
-}
 
 h1 {
 	font-family: 'AvantGarde';
@@ -24,70 +25,89 @@ p {
 }
 
 body {
-	padding: 0;
 	background-color: #010101;
 	color: white;
-	text-align: center;
-
+	margin: 0;
+	padding: 0;
 }
 
-.header {
-	text-align: left;
-	top: 0;
+body::-webkit-scrollbar {
+	width: 0.25rem;
+}
 
-	padding-top: 0;
-	padding-left: 20px;
+body::-webkit-scrollbar-track {
+	background: #010101;
+}
 
+body::-webkit-scrollbar-thumb {
+	background: #df355a;
+}
+
+main {
+	margin-left: 5rem;
+	padding: 1rem;
 }
 
 .title {
-	border-style: solid;
-}
-
-.socials {
-	margin: 0px 25px 25px auto;
-	width: fit-content;
-	border-style: solid;
+	padding-top: 0;
+	display: flex;
 	
+
 }
 
+.title h1 {
 
-.navbar a {
-	position: relative;
-	font-family: 'SourceSansPro';
-	font-size: 18px;
-	color: white;
-	font-weight: 500;
-	text-decoration: none;
-	margin-left: 40px;
 }
 
-.navbar a::before {
-	content: '';
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 0;
-	height: 2px;
-	background: #ff006e;
-	transition: .3s;
+.title p {
+	padding-left: 1rem;
+	display: flex;
+	width: 18%;
 }
 
-.navbar a:hover::before {
-	width: 100%;
-}
-
-
-.news {
-	width: 100%;
-	margin-top: 50px;
-}
-
-footer {
+.navbar {
+	width: 5rem;
+	height: 100vh;
+	position: fixed;
+	background-color: #010101;
+	border-style: none solid none none;
+	border-color: #df355a;
 	text-align: center;
-	bottom: 0;
-	height: 0;
-	width: 100%;
 }
+
+.navbar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.nav-item {
+	width: 100%;
+	margin-top: 2rem;
+
+}
+
+.nav-link img {
+	min-width: 2rem;
+	width: 3rem;
+
+}
+
+
+
+.nav-item:last-child {
+	margin-top: auto;
+	margin-bottom: 2rem;
+}
+
+.nav-link img:hover {
+	background: #df355a;
+	transition: 500ms ease;
+}
+
 
 
