@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'AvantGarde';
+	src: url(fonts/AvantGarde-Bold.188068d1.otf);
+}
+
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url(fonts/SourceSansPro-Regular.770ca066.ttf);
+}
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'AvantGarde';
+
+}
+
+p {
+	font-family: 'SourceSansPro';
+
+}
+
+body {
+	padding: 0;
+	background-color: #010101;
+	color: white;
+	text-align: center;
+
+}
+
+.header {
+	text-align: left;
+	top: 0;
+
+	padding-top: 0;
+	padding-left: 20px;
+
+}
+
+.title {
+	border-style: solid;
+}
+
+.socials {
+	margin: 0px 25px 25px auto;
+	width: fit-content;
+	border-style: solid;
+	
+}
+
+
+.navbar a {
+	position: relative;
+	font-family: 'SourceSansPro';
+	font-size: 18px;
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+.navbar a::before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: #ff006e;
+	transition: .3s;
+}
+
+.navbar a:hover::before {
+	width: 100%;
+}
+
+
+.news {
+	width: 100%;
+	margin-top: 50px;
+}
+
+footer {
+	text-align: center;
+	bottom: 0;
+	height: 0;
+	width: 100%;
+}
+
+
