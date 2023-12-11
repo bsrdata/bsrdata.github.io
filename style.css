@@ -14,7 +14,7 @@
 }
 
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'AvantGarde';
 
 }
@@ -45,24 +45,54 @@ body::-webkit-scrollbar-thumb {
 
 main {
 	margin-left: 5rem;
-	padding: 1rem;
+	padding: 0;
+}
+
+.header {
+	border-style: none none solid none;
+	border-color: #df355a;
+	border-width: 1px;
+	padding-top: 0px;
 }
 
 .title {
-	padding-top: 0;
+	padding-left: 1rem;
 	display: flex;
-	
-
 }
 
 .title h1 {
-
+	font-size: 2rem;
 }
 
 .title p {
-	padding-left: 1rem;
+	margin: auto 0 auto 1rem;
 	display: flex;
 	width: 18%;
+}
+
+.characters {
+	margin: 1rem;
+}
+
+.char-table {
+	border-style: solid;
+	display: inline-flex;
+}
+
+.char-table a {
+	margin: 1rem;
+}
+
+
+.twitter-feed {
+	float: right;
+	margin: 1rem;
+	border-style: solid;
+	border-color: #df355a;
+	border-width: 1px;
+}
+.twitter-feed a {
+	color: transparent;
 }
 
 .navbar {
